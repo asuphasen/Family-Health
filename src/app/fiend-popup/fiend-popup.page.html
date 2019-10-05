@@ -1,0 +1,14 @@
+<ion-content>
+  <div class="top">
+    <div class="img">
+      <img src="{{friendData.image_url}}" alt="">
+    </div>
+    <div class="text"> {{friendData.name}} </div>
+  </div>
+  <div class="button">
+    <div class="div" (click)="back(false)">ยกเลิก</div>
+    <div style="flex: 0.1"></div>
+    <div class="div" (click)="back(true)">เพิ่มเพื่อน</div>
+  </div>
+
+</ion-content>

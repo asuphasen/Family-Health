@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.658" height="23.428" viewBox="0 0 17.658 23.428">
+  <g id="dial-number" transform="translate(-41.595 0)">
+    <path id="Path_39" data-name="Path 39" d="M59.253,5.114C59.224,3.6,58.195,2.24,56.346,1.286a14.382,14.382,0,0,0-11.819-.032c-1.877.955-2.916,2.327-2.929,3.867a.071.071,0,0,0,0,.008l0,1.059a.883.883,0,0,0,.881.885l3.487.01a.883.883,0,0,0,.886-.881l0-1.06c0-.487.888-1.884,3.581-1.877S54,4.643,54,5.131L54,6.19a.883.883,0,0,0,.88.885l3.487.01a.883.883,0,0,0,.885-.881S59.253,5.124,59.253,5.114Z" transform="translate(0)" fill="#fff"/>
+    <rect id="Rectangle_58" data-name="Rectangle 58" width="3.997" height="3.997" transform="translate(42.746 8.319)" fill="#fff"/>
+    <rect id="Rectangle_59" data-name="Rectangle 59" width="3.997" height="3.997" transform="translate(48.426 8.319)" fill="#fff"/>
+    <rect id="Rectangle_60" data-name="Rectangle 60" width="3.997" height="3.997" transform="translate(54.105 8.319)" fill="#fff"/>
+    <rect id="Rectangle_61" data-name="Rectangle 61" width="3.997" height="3.997" transform="translate(42.746 13.876)" fill="#fff"/>
+    <rect id="Rectangle_62" data-name="Rectangle 62" width="3.997" height="3.997" transform="translate(48.426 13.876)" fill="#fff"/>
+    <rect id="Rectangle_63" data-name="Rectangle 63" width="3.997" height="3.997" transform="translate(54.105 13.876)" fill="#fff"/>
+    <rect id="Rectangle_64" data-name="Rectangle 64" width="3.997" height="3.996" transform="translate(42.746 19.432)" fill="#fff"/>
+    <rect id="Rectangle_65" data-name="Rectangle 65" width="3.997" height="3.996" transform="translate(48.426 19.432)" fill="#fff"/>
+    <rect id="Rectangle_66" data-name="Rectangle 66" width="3.997" height="3.996" transform="translate(54.105 19.432)" fill="#fff"/>
+  </g>
+</svg>

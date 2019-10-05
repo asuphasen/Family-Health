@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="110.779" height="110.779" viewBox="0 0 110.779 110.779">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fc7832"/>
+      <stop offset="1" stop-color="#e84159"/>
+    </linearGradient>
+  </defs>
+  <g id="qr-code" transform="translate(0)">
+    <g id="Group_3" data-name="Group 3">
+      <path id="Path_10" data-name="Path 10" d="M0,269.619H50.354V219.265H0Zm10.07-40.283H40.283v30.135H10.07Z" transform="translate(0 -158.841)" fill="url(#linear-gradient)"/>
+      <rect id="Rectangle_11" data-name="Rectangle 11" width="10.071" height="10.072" transform="translate(20.141 80.565)" fill="url(#linear-gradient)"/>
+      <rect id="Rectangle_12" data-name="Rectangle 12" width="10.073" height="10.071" transform="translate(80.564 100.708)" fill="url(#linear-gradient)"/>
+      <rect id="Rectangle_13" data-name="Rectangle 13" width="10.073" height="10.071" transform="translate(100.706 100.708)" fill="url(#linear-gradient)"/>
+      <path id="Path_11" data-name="Path 11" d="M259.549,229.337h-10.07V219.265H219.265v50.354h10.072V239.407h10.069v10.072h30.214V219.265H259.549Z" transform="translate(-158.841 -158.841)" fill="url(#linear-gradient)"/>
+      <path id="Path_12" data-name="Path 12" d="M0,50.355H50.354V0H0ZM10.07,10.07H40.283V40.283H10.07Z" fill="url(#linear-gradient)"/>
+      <rect id="Rectangle_14" data-name="Rectangle 14" width="10.071" height="10.071" transform="translate(20.141 20.141)" fill="url(#linear-gradient)"/>
+      <path id="Path_13" data-name="Path 13" d="M219.265,0V50.355H269.62V0Zm40.284,40.283H229.337V10.07h30.212Z" transform="translate(-158.841)" fill="url(#linear-gradient)"/>
+      <rect id="Rectangle_15" data-name="Rectangle 15" width="10.073" height="10.071" transform="translate(80.564 20.141)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

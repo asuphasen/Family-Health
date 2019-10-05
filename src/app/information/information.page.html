@@ -1,0 +1,53 @@
+<ion-header class="header-bg">
+  <div class="title-tab">
+    <div class="back-box" (click)="gotoBack()">
+      <img src="./assets/icon/left-arrow.svg" alt="">
+    </div>
+    <div class="title-box">
+      ข้อมูลส่วนตัว
+    </div>
+  </div>
+  <div class="user">
+    <div class="imageIcon">
+      <div class="image">
+          <img src="{{userData.image_url}}" alt="">
+      </div>
+    </div>
+    <div class="info">
+      <div class="bon">
+        <div class="name">{{userData.name}}</div>
+        <div>
+          <img class="edit" src="assets/icon/pencil-edit-button.svg" alt="" *ngIf="canEdit" (click)="toEdit()">
+        </div>
+      </div>
+      <div class="lang">{{userData.phonenumber}}</div>
+    </div>
+  </div>
+
+  <ion-segment id="IonSlides" class="tabs" scrollable (ionChange)="segmentChanged($event)">
+    <ion-segment-button mode='md' value="0" checked>
+      <ion-label>ข้อมูลทั่วไป</ion-label>
+    </ion-segment-button>
+    <ion-segment-button mode='md' value="1">
+      <ion-label>การนัดพบแทพย์</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+</ion-header>
+<ion-content>
+    <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content pullingIcon="null"></ion-refresher-content>
+      </ion-refresher>
+  
+  <ion-slides (ionSlideDidChange)="slideDidChange($event)" scrollable>
+    <ion-slide>
+      <ion-nav [root]='tab1' [rootParams]="uid"></ion-nav>
+    </ion-slide>
+    <ion-slide>
+      <ion-nav [root]='tab2' [rootParams]="uid"></ion-nav>
+    </ion-slide>
+  </ion-slides>
+
+
+
+</ion-content>

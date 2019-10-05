@@ -1,0 +1,60 @@
+$orange: #f18579;
+$yellow: #fefaef;
+$btn-red: #f18579;
+$btn-orange: #feb692;
+
+ion-content {
+  --overflow: hidden;
+  --background: linear-gradient(180deg, #f18579 0%, #fefaef 50%);
+  width: 100%;
+  height: 150%;
+}
+
+.bg {
+  background: linear-gradient(180deg, #f18579 0%, #fefaef 50%);
+  width: 100%;
+  height: 150%;
+  top: -50vw;
+  position: relative;
+}
+.logo-box {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 40vw;
+    border-radius: 50%;
+    border: 4px solid #feb692;
+  }
+}
+
+.button-box {
+  top: 75%;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .btn {
+    transition: 0.5s all;
+    background: linear-gradient(360deg, #feb692, #f18579);
+    width: 35vw;
+    padding: 3vw;
+    border-radius: 100px;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    margin-left: 3vw;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    font-weight: bold;
+  }
+  .btn:active:hover{
+    transform: scale(0.8)
+  }
+}

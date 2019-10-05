@@ -1,0 +1,112 @@
+<ion-content>
+    <div class="content">
+        <div class="contentTab1">
+            <input type="text" class="name" placeholder="ชื่อ-นามสกุล" [(ngModel)]="dataFrom.name" [disabled]="disabled">
+            <div class="calendar">
+                <div class="text">วัน/เดือน/ปี เกิด</div>
+                <div class="inputDateTime">
+                    <ion-datetime class="date" placeholder="ว/ด/ป" displayFormat="D/M/YYYY"
+                        [(ngModel)]="dataFrom.birthday" [disabled]="disabled"></ion-datetime>
+                    <img src="assets/icon/calendar.svg" alt="">
+                </div>
+            </div>
+
+            <div class="bloodType">
+                <div class="text">หมู่เลือด</div>
+                <div class="type">
+                    <div class="div1" [class.active]="dataFrom.blood=='A'" (click)="selectBlood('A')">A</div>
+                    <div class="div2" [class.active]="dataFrom.blood=='AB'" (click)="selectBlood('AB')">AB</div>
+                    <div class="div3" [class.active]="dataFrom.blood=='B'" (click)="selectBlood('B')">B</div>
+                    <div class="div4" [class.active]="dataFrom.blood=='O'" (click)="selectBlood('O')">O</div>
+                </div>
+            </div>
+
+            <div class="wh">
+                <div class="item">
+                    <div class="title">น้ำหนัก</div>
+                    <div class="input">
+                        <input type="number" placeholder="กก." [(ngModel)]="dataFrom.weight" [disabled]="disabled">
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title">ส่วนสูง</div>
+                    <div class="input">
+                        <input type="number" placeholder="ซม." [(ngModel)]="dataFrom.height" [disabled]="disabled">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="box">
+                <div class="item">
+                    <div class="text">โรคประจำตัว</div>
+                    
+                    <div class="input no-border" *ngFor="let disease of dataFrom.diseases;let i = index">
+                        <div class="inputText">{{disease}}</div>
+                        <div class="add" (click)="removeDisease(i)" *ngIf="!disabled">
+                            <img src="assets/icon/plus-sign-in-a-black-circle.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="input" *ngIf="!disabled">
+                        <input class="inputText" type="text" placeholder="โรคประจำตัว" [(ngModel)]="diseaseText" [disabled]="disabled">
+                        <div class="add" (click)="addDisease()" *ngIf="!disabled">
+                            <img src="assets/icon/add.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="text">ประวัติการผ่าตัด</div>
+                    <div class="input no-border" *ngFor="let medical of dataFrom.medicals;let i = index">
+                        <div class="inputText">{{medical}}</div>
+                        <div class="add" (click)="removeMedical(i)" *ngIf="!disabled">
+                            <img src="assets/icon/plus-sign-in-a-black-circle.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="input" *ngIf="!disabled">
+                        <input class="inputText" type="text" placeholder="ประวัติการผ่าตัด" [(ngModel)]="medicalText" [disabled]="disabled">
+                        <div class="add" (click)="addMedical()" >
+                            <img src="assets/icon/add.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="text">ประวัติการแพ้ยา</div>
+                    <div class="input no-border" *ngFor="let drugs of dataFrom.drugs;let i = index">
+                        <div class="inputText">{{drugs}}</div>
+                        <div class="add" (click)="removeDrugs(i)" *ngIf="!disabled">
+                            <img src="assets/icon/plus-sign-in-a-black-circle.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="input" *ngIf="!disabled">
+                        <input class="inputText" type="text" placeholder="ประวัติการแพ้ยา" [(ngModel)]="drugText" [disabled]="disabled">
+                        <div class="add" (click)="addDrugs()" >
+                            <img src="assets/icon/add.svg" alt="" >
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="text">ประวัติการแพ้อาหาร</div>
+                    <div class="input no-border" *ngFor="let foods of dataFrom.foods;let i = index">
+                        <div class="inputText">{{foods}}</div>
+                        <div class="add" (click)="removeFoods(i)" *ngIf="!disabled">
+                            <img src="assets/icon/plus-sign-in-a-black-circle.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="input" *ngIf="!disabled">
+                        <input class="inputText" type="text" placeholder="ประวัติการแพ้อาหาร" [(ngModel)]="foodText" [disabled]="disabled">
+                        <div class="add" (click)="addFoods()">
+                            <img src="assets/icon/add.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inputBox">
+                <div class="title">ประวัติเพิ่มเติม</div>
+                <ion-textarea class="input" placeholder="ประวัติเพิ่มเติม" [disabled]="disabled"></ion-textarea>
+            </div>
+
+            <button class="ok" (click)="save()" *ngIf="!disabled">บันทึก</button>
+        </div>
+    </div>
+</ion-content>

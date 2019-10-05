@@ -1,0 +1,11 @@
+ion-toolbar {
+  --background: transparent;
+}
+
+.cameraView {
+  background: transparent !important;
+}
+ion-app.cameraView,
+ion-app.cameraView .nav-decor {
+  background: transparent !important;
+}

@@ -1,0 +1,7 @@
+{
+  "name": "nu-point",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

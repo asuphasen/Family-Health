@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "95851519630",
+    "firebase_url": "https://nupoint-5e11d.firebaseio.com",
+    "project_id": "nupoint-5e11d",
+    "storage_bucket": "nupoint-5e11d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:95851519630:android:2087d2ee7d054c05",
+        "android_client_info": {
+          "package_name": "com.nuchporn.nupoint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "95851519630-1dkro3dmpjct8lvtb5nurmv8cddhp0h1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nuchporn.nupoint",
+            "certificate_hash": "edf145b3b3eb629903b0cfd0f558a66df174718b"
+          }
+        },
+        {
+          "client_id": "95851519630-8t0trr6qh9lh30iimqohkhdu2q00l062.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_LEsAZkZL2IdY9Ab9vzee8_VmW--n6KE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "95851519630-8t0trr6qh9lh30iimqohkhdu2q00l062.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

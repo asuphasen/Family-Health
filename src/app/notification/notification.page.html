@@ -1,0 +1,22 @@
+<ion-header class="header-bg">
+  <div class="title-tab">
+    <div class="back-box" (click)="gotoHome()">
+      <img src="./assets/icon/left-arrow.svg" alt="">
+    </div>
+    <div class="title-box">
+      แจ้งเตือนฉุกเฉิน
+    </div>
+  </div>
+</ion-header>
+
+<ion-content>
+  <div class="emergency-box" *ngFor="let item of lists" (click)="comfirmCall(item.number)">
+    <div class="image-box">
+      <img src="./assets/icon/emergency-call.svg" alt="">
+    </div>
+    <div class="detail-box">
+      <div class="number">{{item.number}}</div>
+      <div class="hos-name">{{item.call_name}}</div>
+    </div>
+  </div>
+</ion-content>

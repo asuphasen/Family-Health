@@ -1,0 +1,32 @@
+<ion-content padding>
+  <div class="header-bg">
+    <img src="./assets/icon/left-arrow.svg" alt="" (click)="back()">
+    <div class="title_1">แก้ไขโปรไฟล์</div> 
+    <img class="icon" src="./assets/icon/logout_e.svg" alt="" (click)="leaveGroup()">
+  </div>
+
+
+  <div class="profile">
+    <div class="image" (click)="toCamera()">
+      <img src="{{user.image_url}}" alt="">
+      <div class="edit">
+        <img src="assets/icon/camera.svg" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- <div class="title">Create a new account to <span>Trainer</span></div> -->
+  <ion-item no-margin no-padding mode="ios" style="margin: 40px;">
+    <ion-label position="floating" style="color:#000;" mode="ios">Name</ion-label>
+    <ion-input mode="ios" [(ngModel)]="user.name"></ion-input>
+  </ion-item>
+  <!-- <div class="check">
+      <ion-checkbox></ion-checkbox>
+      <ion-label style="margin-left: 10px; color: #f18579">ออกจากกลุ่ม</ion-label>
+  </div> -->
+  <!-- <div class="create">and you need to account <span>verify form FJH?</span></div> -->
+  <div class="button">
+      <div class="div" (click)="save()">save</div>
+  </div>
+
+
+</ion-content>

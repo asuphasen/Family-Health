@@ -1,0 +1,131 @@
+ion-content {
+  --overflow: hidden;
+}
+
+.bg {
+  background: linear-gradient(180deg, #f18579 0%, #fefaef 50%);
+  width: 100%;
+  height: 150%;
+  top: -50vw;
+  position: relative;
+}
+.logo-box {
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 40vw;
+    border-radius: 50%;
+    border: 4px solid #feb692;
+  }
+}
+
+.button-box {
+  top: 75%;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .btn {
+    background: linear-gradient(45deg, #feb692, #f18579);
+    width: 40vw;
+    padding: 3vw;
+    border-radius: 100px;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+  }
+}
+
+.input-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 40%;
+  .text {
+    width: 80%;
+    font-size: 5vw;
+    text-align: center;
+  }
+  .input-text {
+    width: 100%;
+    border-radius: 100vw;
+    padding: 3vw 5vw;
+    margin-top: 5vw;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.33);
+    outline: none;
+    border: 0;
+    color: rgb(0, 0, 0);
+  }
+}
+.button-box {
+  top: 75%;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .btn-tab {
+    display: flex;
+    flex-direction: row;
+    .btn-next {
+      transition: 0.5s all;
+      background: linear-gradient(360deg, #feb692, #f18579);
+      width: 35vw;
+      padding: 3vw;
+      border-radius: 100px;
+      letter-spacing: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #ffffff;
+      margin-left: 3vw;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+      font-weight: bold;
+    }
+    .btn-next:active:hover {
+      transform: scale(0.8);
+    }
+    .btn-back {
+      transition: 0.5s all;
+      background: #ffffff;
+      width: 35vw;
+      padding: 3vw;
+      border: 2px solid #f18579;
+      border-radius: 100vw;
+      letter-spacing: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #000000;
+      margin-right: 3vw;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+      font-weight: bold;
+    }
+    .btn-back:active:hover {
+      transform: scale(0.8);
+    }
+  }
+}
+.logo-fam{
+  margin-top: 10vw;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img{
+    width: 40%;
+  }
+}

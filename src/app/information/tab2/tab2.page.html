@@ -1,0 +1,43 @@
+<ion-content>
+    <div class="content">
+        <div class="box1">
+            <div class="title">แพทย์</div>
+            <input type="text" placeholder="ชื่อแพทย์" [(ngModel)]="dataFromMedical.docter" [disabled]="disabled">
+            <input type="text" placeholder="รายละเอียด" [(ngModel)]="dataFromMedical.detail" [disabled]="disabled">
+        </div>
+        <div class="box1">
+            <div class="title">วันเวลาที่นัดพบ</div>
+            <div class="inputs">
+                <img src="assets/icon/calendar.svg" alt="">
+                <ion-datetime class="input" placeholder="วันที่นัดพบ"  [(ngModel)]="dataFromMedical.date" [disabled]="disabled"></ion-datetime>
+            </div>
+            <div class="inputs">
+                <img src="assets/icon/time.svg" alt="">
+                <ion-datetime class="input" displayFormat="h:mm a" placeholder="เวลานัดพบ"  [(ngModel)]="dataFromMedical.time" [disabled]="disabled"></ion-datetime>
+            </div>
+
+        </div>
+        <div class="box1">
+            <div class="title">สถานที่นัดพบ</div>
+            <div class="inputs">
+                <img src="assets/icon/mark.svg" alt="">
+                <input type="text" class="input" placeholder="สถานที่นัดพบ"  [(ngModel)]="dataFromMedical.location" [disabled]="disabled">
+            </div>
+        </div>
+        <div class="box1">
+            <div class="title">เบอร์ติดต่อ</div>
+            <div class="inputs">
+                    <img src="assets/icon/call-answer.svg" alt="">
+                    <input type="text" class="input" placeholder="เบอร์ติดต่อ"  [(ngModel)]="dataFromMedical.phonenumber" [disabled]="disabled">
+                </div>
+        </div>
+
+        <div class="inputBox">
+            <div class="title">ประวัติเพิ่มเติม</div>
+            <ion-textarea class="input" placeholder="ประวัติเพิ่มเติม" [(ngModel)]="dataFromMedical.more" [disabled]="disabled"></ion-textarea>
+        </div>
+
+        <button class="ok" (click)="save()" *ngIf="!disabled">บันทึก</button>
+
+    </div>
+</ion-content>

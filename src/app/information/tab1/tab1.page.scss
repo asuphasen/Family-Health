@@ -1,0 +1,257 @@
+*{
+  font-size: 15px !important;
+}
+
+input:disabled{
+  background: #fff !important;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .contentTab1{
+        width: 100%;
+        background: linear-gradient(180deg, #FFD2CA, #FBFBF9);
+        display: flex;
+        flex-direction: column;
+        .name{
+          width: auto;
+          height: 40px;
+          background: #fff;
+          margin: 10px;
+          margin-top:20px;
+          border-radius: 20px;
+          outline: none;
+          border: none; 
+          padding: 0 10px;
+          font-size: 14px;
+        }
+        .calendar{
+          width: auto;
+          height: 40px;
+          margin: 10px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .text{
+            display: flex;
+            text-align: left;
+            font-size: 14px;
+            padding: 0 10px;;
+            flex: 2.5;
+          }
+          .inputDateTime{
+            flex: 1;
+            height: 40px;
+            border-radius: 20px;
+            background: #fff;
+            display: flex;
+            flex: 3;
+            align-items: center;
+            flex-direction: row;
+            font-size: 14px;
+            .date{
+              flex: 1;
+            }
+            img{
+              display: flex;
+              justify-self: flex-end;
+              padding: 2.5vw;
+              opacity: 0.45;
+            }
+          }
+        }
+        .bloodType{
+          height: 40px;
+          margin: 10px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          .text{
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            padding:0 10px;
+            flex: 1.5;
+            font-size: 14px;
+          }
+          .type{
+            width: 100%;
+            height: 100%;
+            border-radius:5.5vw;
+            background: #fff; 
+            flex:3;
+            display: flex;
+            flex-direction: row;
+            border:1px solid rgb(49, 49, 49);
+           .div1{
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             width: 100%;
+             border-right:1px solid rgb(49, 49, 49); 
+             color: rgb(49, 49, 49);
+             border-radius: 5.5vw 0 0 5.5vw; 
+           }
+           .div2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            border-right:1px solid rgb(49, 49, 49); 
+            color: rgb(49, 49, 49);
+          }
+          .div3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            border-right:1px solid rgb(49, 49, 49); 
+            color: rgb(49, 49, 49);
+          }
+          .div4{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            color: rgb(49, 49, 49);
+            border-radius:0 5.5vw 5.5vw 0;
+          }
+           div{
+             &.active{
+                background: rgb(49, 49, 49);
+                color: rgb(255, 255, 255);
+             }
+           }
+          }
+        }
+        .wh{
+          width: auto;
+          display: flex;
+          flex-direction: row;
+          margin: 10px;
+          .item{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .title{
+              display: flex;
+              justify-content: center;
+              padding-bottom: 1vw; 
+              font-size: 14px;
+            }
+            .input{
+              margin: 0 auto;
+              width: 90%;
+              height: 40px;
+              border-radius: 20px;
+              background: #fff;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              input{
+                width: 90%;
+                text-align: center;
+                background: none;
+                border: none;
+                outline: none;
+                font-size: 16px;
+              }
+            }
+          }
+        }
+
+        .box{
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          padding: 10px;
+          .item{
+            .text{
+              padding: 10px 10px 5px 10px;
+              font-size: 14px;
+            }
+            .input{
+              display: flex;
+              flex-direction: row;
+              height: 40px;
+              align-items: center;
+              &.no-border{
+                .inputText{
+                  border: 0 solid #fff;
+                  display: flex;
+                  align-items: center;
+                }
+                margin-bottom: 5px;
+              }
+              .inputText{
+                flex: 1;
+                height: 40px;
+                border-radius: 20px;
+                background: #fff;
+                border: 1px solid rgb(49, 49, 49);
+                outline: none;
+                padding: 0 10px;
+                font-size: 16px;
+              }
+              .add{
+                height: 40px;
+                margin: 0 10px;
+                transition: all 300ms;
+                img{ 
+                  object-fit: cover;
+                  width: 30px;
+                  height: 30px;
+                  margin-top: 5px;
+                }
+              }
+              .add:active:hover{
+                transform: scale(0.9);
+              }
+            }
+          }
+        }
+
+        .inputBox{
+          width: auto;
+          display: flex;
+          flex-direction: column;
+          margin: 15px;
+          .title{
+            width: 100%; 
+            background: linear-gradient(90deg, #EBABA6, #F5E4D5);
+            padding: 3vw 5vw;
+            border-radius: 20px 20px 0 0;
+            color: #fff;
+          } 
+          .input{
+            width: 100%;
+            border-radius:0 0 20px 20px ;
+            background: #fff;
+            padding: 0 5px;
+            margin: 0 !important;
+            box-shadow: 0 3px 6px rgba(0,0,0,.16);
+          }
+        }
+
+        .ok{
+            margin: 5vw auto;
+            width: 150px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            background: linear-gradient(90deg, #F18579, #FEB692);
+            color: #fff;
+            border: none;
+            outline: none;
+            transition: 150ms;
+        }
+        .ok:active:hover{
+          transform: scale(0.95);
+        }
+      }
+}

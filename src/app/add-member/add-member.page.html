@@ -1,0 +1,45 @@
+<ion-content>
+  <div class="header-bg">
+    <div class="title-tab">
+      <div class="back-box" (click)="back()">
+        <img src="./assets/icon/left-arrow.svg" alt="">
+      </div>
+      <div class="title-box">
+        <img src="./assets/icon/qr-code.svg" alt="" (click)="gotoQRcode()">
+      </div>
+    </div>
+  </div>
+
+  <div class="logo-box">
+    <img src="./assets/icon/logo.png" alt="">
+  </div>
+
+  <div style="width: 100%; font-size: 20px; text-align: center">เพิ่มสมาชิกครอบครัว</div>
+
+  <div
+    style="width: 100%; display: flex; justify-content: center;align-items: center; flex-direction: column; margin-top: 5vw;   ">
+    <!-- <div class="button">
+      <div class="logo">
+        <img src="./assets/icon/dial-number.svg" alt="">
+      </div>
+      <div class="text">พิมพ์หมายเลข</div>
+    </div> -->
+
+    <div class="button" (click)="encodedText()">
+      <div class="logo">
+        <img src="./assets/icon/qr-code.svg" alt="">
+      </div>
+      <div class="text">Scan QR Code</div>
+    </div>
+
+  </div>
+
+
+  <div style="width: 100%; font-size: 14px; text-align: center; margin-top: 10vw; padding: 0 25vw;">เพิ่มสมาชิกครอบครัวได้ไม่เกิน 5 คน ทำให้เป็นครอบครัวใหญ่
+    <span class="more-text">เพิ่มเติม</span></div>
+
+  <div class="logo-fam">
+    <img src="./assets/icon/fam-logo2.png" alt="">
+  </div>
+
+</ion-content>

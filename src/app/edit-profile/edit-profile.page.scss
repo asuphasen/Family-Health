@@ -1,0 +1,113 @@
+ion-content{
+    --background: linear-gradient(135deg, #f18579 0%, #fefaef 60%);
+}
+.header-bg {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    .title_1{
+        flex: 1;
+        color: #000;
+        text-align: center;
+    }
+    .icon{
+        height: 80%;
+        //opacity: 0.62;
+    }
+  }
+  ion-checkbox{
+      --background:none !important;
+  }
+
+  .button{
+    display: flex;
+    flex-direction: row;
+    margin-top: 233px;
+    padding: 0 40px;
+    transition: all 200ms;
+    .div{
+        height: 41px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex: 1;
+        text-align: center;
+        background: linear-gradient(135deg, #feb692, #f18579);
+        border-radius: 10px;
+        color: #fff;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+.button:active:hover{
+    transform: scale(0.98);
+}
+
+ion-toolbar {
+    --background:#1B1c26;
+    // --ion-color-base: transparent !important;
+}
+ion-footer{
+    --background: #1B1c26;
+}
+ion-item{
+    --background: transparent;
+}
+.create{
+    color: #fff;text-align: center;
+    padding: 20px 0;
+    // text-decoration: underline;
+    span{
+        color:#bbfb49;
+    }
+}
+.title{
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+    span{
+        color:#bbfb49;
+    }
+}
+
+.check{
+    display: flex;
+    align-items: center;
+    margin: 0 40px;
+}
+.profile{
+    margin: 20px;
+    .image{
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        position: relative;
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            //opacity: 0.52;
+        }
+        .edit{
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: rgba($color: #000000, $alpha: 0.66);
+            right: 5px;
+            bottom: 5px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 10px;
+                height: 10px;
+            }
+        }
+    }
+    
+}

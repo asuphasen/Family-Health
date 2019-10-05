@@ -1,0 +1,135 @@
+<ion-header class="header-bg">
+  <div class="title-tab">
+    <div class="back-box">
+      <img src="../../assets/icon/logout.svg" alt="" (click)="logout()">
+    </div>
+    <div class="title-box">
+      <img src="./assets/icon/fam-logo2.png" alt="">
+    </div>
+  </div>
+  <div class="image-box">
+    <div class="profile owner" (click)="gotoInformation(user.uid)">
+      <img src="{{user.image_url}}" alt="">
+    </div>
+    <div class="others" *ngFor="let item of otherProfile" (click)="gotoInformation(item.uid)">
+      <div class="other">
+        <img src="{{item.image_url}}" alt="">
+      </div>
+      <div class="text">{{item.name}}</div>
+    </div>
+
+    <div class="profile add" (click)='gotoAddMember()' *ngIf="otherProfile.length < 4">
+      <img src="assets/icon/add2.svg" alt="">
+    </div>
+  </div>
+</ion-header>
+
+<ion-content>
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content pullingIcon="null" pullMax="60"></ion-refresher-content>
+  </ion-refresher>
+
+  <div class="schedule-box">
+    <div class="schedule">
+      <div class="top">
+        <div class="emer-circle">
+          <img src="./assets/icon/warning-sign.svg" alt="">
+        </div>
+        <div class="emer-text">ฉุกเฉิน</div>
+        <div class="icon-box">
+          <!-- <img src="./assets/icon/alarm.svg" alt=""> -->
+          <ion-toggle color="danger" checked [(ngModel)]="noti_status" (ionChange)="test()" mode="ios"></ion-toggle>
+        </div>
+      </div>
+      <div class="bottom">
+        <div style="width: 100%; text-align: center; color: rgb(141, 141, 141); font-size: 14px; padding: 10px 0;"
+          *ngIf="!noti_status">
+          การแจ้งเตือนถูกปิดใช้งาน</div>
+        <div *ngIf="noti_status">
+          <div *ngIf="sos.length==0"
+            style="width: 100%; text-align: center; color: rgb(141, 141, 141); font-size: 14px; padding: 10px 0;">
+            ไม่พบข้อมูล
+          </div>
+          <div *ngIf="sos.length!=0">
+            <div *ngFor="let s of sos" class="list-i">
+              <div>{{s.from}} : </div>
+              <div class="list-i-cen">{{s.message}}</div>
+              <div style="color: #4B4659">{{s.timestamp | date:'d/M/yyyy H:mm'}}</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="schedule-box" style="padding: 0 6vw 6vw 6vw">
+    <div class="schedule2">
+      <div class="top">
+        <div class="icon-box">
+          <img src="./assets/icon/alarm.svg" alt="">
+        </div>
+        <div>
+          แจ้งเตือน
+        </div>
+      </div>
+      <div class="bottom">
+        <!-- <div *ngIf="logs=='null'">
+          ไม่พบข้อมูล
+        </div> -->
+        <div *ngIf="logs">
+          <div *ngIf="logs.length==0"
+            style="width: 100%; text-align: center; color: rgb(141, 141, 141); font-size: 14px; padding: 10px 0;">
+            ไม่พบข้อมูล</div>
+          <div *ngIf="logs.length!=0">
+            <div *ngFor="let l of logs" class="list-i2">
+              <div>{{l.from}}: </div>
+              <div class="list-i-cen">{{l.detail}}</div>
+              <div style="color: #4B4659">{{l.timestamp | date:'d/M/yyyy'}}</div>
+            </div>
+            <!-- <div class="list-i" style="justify-content: center">
+              <span style="color: #934043; text-decoration: underline; text-align: center">แสดงทั้งหมด</span>
+            </div> -->
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="icon-box">
+    <div class="box1">
+      <div class="left-box" (click)="gotoNoti()">
+        <div class="image-box">
+          <img src="./assets/icon/alarm.svg" alt="">
+        </div>
+        <div class="icon-name">แจ้งเตือนฉุกเฉิน</div>
+      </div>
+      <div class="right-box" (click)="gotoEmer_call()">
+        <div class="image-box">
+          <img src="./assets/icon/emergency-call-white.svg" alt="">
+        </div>
+        <div class="icon-name">สายด่วน</div>
+      </div>
+    </div>
+    <div class="box2" (click)="gotoMap()">
+      <div class="image-box">
+        <img src="./assets/icon/map-location.svg" alt="">
+      </div>
+      <div class="icon-name">โรงพยาบาลไกล้เคียง</div>
+    </div>
+  </div> -->
+</ion-content>
+<ion-footer>
+  <ion-toolbar style="--background: #F18579">
+    <div style="display: flex">
+      <div class="image-box-foot" (click)="gotoMap()">
+        <img src="./assets/icon/map-location.svg" alt="">
+      </div>
+      <div class="image-box-foot" (click)="gotoEmer_call()">
+        <img src="./assets/icon/emergency-call-white.svg" alt="">
+      </div>
+    </div>
+  </ion-toolbar>
+</ion-footer>

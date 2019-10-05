@@ -1,0 +1,27 @@
+<ion-content>
+  <div class="header-bg">
+    <div class="title-tab">
+      <div class="back-box" (click)="back()">
+        <img src="./assets/icon/left-arrow.svg" alt="">
+      </div>
+      <div class="title-box">
+        QR เข้าร่วมสมาชิกครอบครัว
+      </div>
+    </div>
+  </div>
+
+  <div class="logo-box">
+    <img src="./assets/icon/logo.png" alt="">
+  </div>
+
+  <div class="qr-box">
+    <div class="qr-content">
+      <qrcode [qrdata]="qrCodeData" [size]="256" [level]="'M'"></qrcode>
+    </div>
+  </div>
+
+  <div class="logo-fam">
+    <img src="./assets/icon/fam-logo2.png" alt="">
+  </div>
+
+</ion-content>

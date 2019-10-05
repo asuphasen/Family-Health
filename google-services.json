@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "492804807090",
+    "firebase_url": "https://family-health-6ee5f.firebaseio.com",
+    "project_id": "family-health-6ee5f",
+    "storage_bucket": "family-health-6ee5f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:492804807090:android:758e10d13a636ec1",
+        "android_client_info": {
+          "package_name": "code.app.familyhealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "492804807090-4ljs9r9gimqtt3guvq8blpu4b3ruciuj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "code.app.familyhealth",
+            "certificate_hash": "6b912c0552f88d48e1b2bced96b67bc8b443e1bb"
+          }
+        },
+        {
+          "client_id": "492804807090-h3aisf1odttdomhdlsn5rlg65nfmi95b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBN6DitF81nRUJtP8ilcKQLis5HUDQsrxg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "492804807090-h3aisf1odttdomhdlsn5rlg65nfmi95b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

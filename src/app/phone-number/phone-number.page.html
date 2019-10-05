@@ -1,0 +1,35 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>phone-number</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <!-- <div class="bg"></div> -->
+  <div class="logo-box">
+    <img src="./assets/icon/logo.png" alt="">
+  </div>
+
+  <div class="input-box">
+    <div class="text">
+      หมายเลขโทรศัพท์
+    </div>
+    <div style="width: 80%;">
+      <input class="input-text" type="number" placeholder="หมายเลขโทรศัพท์" [(ngModel)]="phonenumber">
+    </div>
+  </div>
+
+  <div class="button-box">
+    <div class="btn-tab">
+      <div class="btn-back" (click)="gotoSplash()">
+        BACK
+      </div>
+      <div class="btn-next" (click)="gotoOTP()">
+        NEXT
+      </div>
+    </div>
+    <div class="logo-fam">
+      <img src="./assets/icon/fam-logo2.png" alt="">
+    </div>
+  </div>
+</ion-content>
